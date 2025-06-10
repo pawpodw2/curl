@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ "master" ]
 
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'test tags'
+
 jobs:
   build:
 
